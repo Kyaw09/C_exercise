@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1502900472 source:/root/1cst 2nd sem/Self-study programming/C/How to program using C/Chapter 8 string/character palindrone using strrev/main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdbool.h>
+	<string.h>
+

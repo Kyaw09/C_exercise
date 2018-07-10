@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1501256864 source:/root/1cst 2nd sem/Self-study programming/C/How to program using C/Chapter 8 string/About ctype header file/main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1505023342 source:/root/1cst 2nd sem/Self-study programming/C/How to program using C/Chapter 8 string/file processing write/main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+

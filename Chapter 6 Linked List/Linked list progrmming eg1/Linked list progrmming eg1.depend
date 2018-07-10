@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1499798086 source:/home/kyaw/1cst 2nd sem/Self-study programming/C/Data structure/Chapter 6 Linked List/Linked list progrmming eg1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+
+1499799290 source:/root/1cst 2nd sem/Self-study programming/C/Data structure/Chapter 6 Linked List/Linked list progrmming eg1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+

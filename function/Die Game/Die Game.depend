@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1499607666 source:/home/kyaw/1cst 2nd sem/Self-study programming/C/function/Die Game/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1499607666 source:/root/1cst 2nd sem/Self-study programming/C/function/Die Game/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

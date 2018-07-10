@@ -1,0 +1,41 @@
+     Arrays
+Travel 
+
+Step 1: [INITIALIZE] SET I= LOWER_BOUND
+Step 2: Repeat Steps 3 and 4 while I<UPPER_BOUND
+Step 3: Apply Process A[I]
+Step 4: SET I= I+1
+	[END OF LOOP]
+Step 5: END
+
+Insert 
+
+Step 1: SET UPPER_BOUND = UPPER_BOUND + 1
+Step 2: SET A[UPPER_BOUND] = VAL
+Step 3: EXIT
+
+Insert in middle 
+
+Step 1: [INITIALIZE] SET I = N
+Step 2: Reapeat Steps 3 and 4 while I >= POS 
+Step 3: SET A[I+1] = A[I]
+Step 4: SET I = I-1
+	[END OF LOOP]
+Step 5: SET N =  N-1 
+Step 6: SET A[POS] = VAL
+Step 7: EXIT
+
+DELETE 
+
+Step 1: SET UPPER_BOUND = UPPER_BOUND - 1
+Step 2: EXIT
+
+DELETE in middle
+
+Step 1: [INITIALIZE] SET I = POS
+Step 2: Repeat Steps 3 and 4 while I < N -1
+Step 3: SET A[I]= A[I+1]
+Step 4: SET I= I+1
+	[END OF LOOP]
+Step 5: SET N = N -1
+Step 6: EXIT

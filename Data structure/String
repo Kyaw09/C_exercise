@@ -1,0 +1,156 @@
+
+   String 
+
+Finding length a string 
+
+Step 1: [INITIALIZE]  SET  I = 0;
+Step 2: Repeat Step 3  while STR[I]!=NULL
+Step 3: SET I=I+1
+        [END OF LOOP]
+Step 4: SET LENGTH = I
+Step 5: EXIT
+
+Converting upper case
+
+Step 1: [INIIIALIZE] SET I=0;
+Step 2: Repeat Step 3 while STR[I]=NULL
+Step 3: IF STR[I]>='a' AND STR[I]<='z'
+            SET UPPERSTR[I]= STR[I]-32//To convert to lower case to add 32 
+        else 
+            SET UPPERSTR[I]= STR[I]
+        [END OF IF]
+        SET I=I+1;
+       [END OF LOOP]
+Step 4:SET UPPERSTR[I]=NULL
+Step 5:EXIT
+Appending a string to another string
+
+
+Step 1: [INITIALIZE] SET I=0,J=0
+Step 2: Repeat Step 3 while DEST_STR[I]!=NULL
+Step 3: SET I=I+1
+	[END OF LOOP]
+Step 4: Repeat Step 5   while SOU_STR[J]!=NULL
+Step 5: SET DEST_STR[I]= SOU_STR[J]
+Step 6: SET I=I+1
+Step 7: SET J=J+1
+        [END OF LOOP]
+Step 8: SET DEST_STR[I]=NULL
+Step 9: EXIT
+
+Comparing two string 
+
+Step 1: [INITIALIZE] SET I=0
+Step 2: SET LEN1=Length[STR1], LEN2= Length[STR2]
+Step 3: IF LEN1 != LEN2
+            Write "Length of strings must be equal" 
+        ELSE 
+            Repeat while I<LEN1
+             IF STR1[I]==STR2[I]
+    		SET I=I+1
+	     ElSE
+		GO TO Step 4 
+	     [END OF IF]
+	    [END OF LOOP]
+	    IF I==LEN1
+		SET SAME = 1
+		Write "Strings are equal"
+            [END OF IF]
+	[END OF IF]
+Step 4: IF SAME == 0
+		Repeat while I<LEN1
+			IF STR1[I]>STR2[I]
+				Write "STR1 is greater than STR2"
+			ELSE IF STR1[I]<STR2[I]	
+			 	Write 'STR2 is greater than STR1"
+			[END OF IF]
+		[END OF LOOP]
+	[END OF IF]	
+Step 5: EXIT
+
+
+Reversing string 
+
+Step 1: [INITIAIZE] SET I=0 , J=Length(STR)-1
+Step 2: Repeat Steps 3 and 4 while I<J
+Step 3: SWAP(STR[I],STR[J])
+Step 4: SET I=I+1, J=J-1
+Step 5: EXIT
+
+Extracting a substring from string 
+
+Step 1: [INITIALIZE] SET I=M, J=0// M is the strating point of substring from string 
+Step 2: Repeat Steps 3 to 5   while STR[I]!= NULL AND N<0
+Step 3: SET SUBSTR[J]=STR[I]
+Step 4: SET I=I+1
+Step 5: SET N=N-1
+Step 6: SET J=J+1
+ 	[END OF LOOP]
+Step 6: SET SUBSTR[I]= NULL
+Step 7: EXIT
+
+Inserting a string in the main string 
+
+Step 1: [INITIALIZE] SET I=0,J=0,K=0;
+Step 2: Repeat Steps 3 and 4  while TEXT[I]!=NULL 
+Step 3: IF I=POS
+	        Repeat 	while STR[K]!=NULL
+				SET RES_STR[J]=STR[K]
+				SET K=K+1
+				SET J=J+1
+		[END OF INNER LOOP]
+	ELSE
+		SET RES_STR[J]=TEXT[I]
+		SET J=J+1
+Step 4: SET I=I+1
+	[END OF LOOP]
+Step 5: SET RES_STR[J]=NULL
+Step 6: EXIT
+
+Pattern Matching 
+
+Step 1: [INITIALIZE] SET I=0 ,MAX=Length(TEXT)-Length(STR)+1
+Step 2: Repeat Step 3 while I<MAX
+Step 3:     Repeat Step 4 for J = 0 to Length(STR)
+Step 4:     IF STR[J] !=  TEXT[I+J]
+   		Go to Step 6 
+            [END OF INNER LOOP]
+Step 5:     SER INDEX=I.Go to Step 8
+Step 6: SET I=I+1
+	[END OF OUTER LOOP]
+Step 7: SET INDEX = -1
+Step 8: EXIT
+
+Deleting substring from mainstring
+
+Step 1: [INITIALIZE] I=0, J=0
+Step 2: Repeat Steps 3 to 6while TEXT[I]==NULL
+Step 3: IF I=M
+		while N>0
+			I=I+1
+			N=N-1
+		[END OF INNER LOOP]
+	[END OF IF]
+Step 4: SET NEW_STR[J]=TEXT[I]
+Step 5: SET J=J+1
+Step 6: SET I=I+1
+	[END OF LOOP]
+Step 7: SET NEW_STR[J]=NULL
+Step 8: EXIT
+
+Replace substring in mainstring
+
+Step 1: [INITIALIZE] SET POS=INDEX[TEXT,P1]
+Step 2: SET TEXT=DELETE(TEXT,POS,Length(P1)
+Step 3: INSERT(TEXT,POS,P2)
+Step 4: EXIT
+
+Process arrays of string
+
+Step 1: [INIALIZE] SET I=0
+Step 2: Repeat Step 3 while I < N
+Step 3: Apply process to NAME[I]
+Step 4: SET I=I+1
+	[END OF LOOP]
+Step 5: EXIT
+ 

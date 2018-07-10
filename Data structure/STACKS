@@ -1,0 +1,52 @@
+						Stacks
+	Insert element in stacks(Push operation)
+
+Step 1: IF TOP=MAX-1
+	PRINT "OVERFLOW"
+	Go to Step 4
+	[END OF IF]
+Step 2: SET TOP = TOP + 1
+Step 3: SET STACK[TOP]=VALUE
+Step 4: END
+
+	DELETE element in stacks(Pop operation)
+
+Step 1: IF TOP=NULL
+	PRINT "UNDERFLOW"
+	Go to Step 4 
+Step 2: SET VALUE = STACK[TOP]
+Step 3: SET TOP = TOP - 1
+Step 4: EXIT
+
+	Peek operation
+
+Step 1: IF TOP = NULL
+	PRINT "UNDERFOLW"
+ 	Go to Step 
+Step 2: RETRUN STACK[TOP]
+Step 3: END
+
+	Insert an element in link stack
+
+Step 1: Allocate the memory for the new node and name it is NEW_NODE
+Step 2: SET NEW_NODE->DATA = VAL
+Step 3: IF TOP = NULL 
+		SET NEW_NODE->NXET = NULL
+		SET TOP = NEW_NODE	
+	ELSE
+		SET NEW_NODE->NEXT = TOP
+		SET TOP = NEW_NODE
+	[END OF IF]
+Step 4: END
+
+	DELETE an element in link stack
+
+Step 1: IF TOP = NULL
+	PRINT "UNDERFLOW"
+	Go to Step 5
+Step 2: SET PTR = TOP
+Step 3: SET TOP = TOP->NEXT
+Step 4: FREE PTR
+Step 5: END
+	
+	

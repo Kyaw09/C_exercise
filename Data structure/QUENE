@@ -1,0 +1,55 @@
+								Queue
+
+		Inserting an element in quene
+Step 1:	IF REAR = MAX - 1
+	PRINT "OVERFLOW'
+	Go to Step 4 
+Step 2: IF REAR = -1 AND FORNT = -1
+		SET REAR = FORNT = 0
+	ELSE 
+		SET REAR = REAR + 1
+	[END OF IF]
+Step 3: SET QUENE[REAR]= NUM
+Step 4: EXIT
+
+		Deleting an element in quene
+
+Step 1: IF FRONT = -1 OR FRONT > REAR 
+		PRINT "UNDERFLOW"
+		Go to Step 4
+	[END OF IF] 
+Step 2: VAL = QUENE[FORNT]
+Step 3: SET FORNT = FRONT +1
+Step 4: EXIT
+
+		Inserting an element in circular quene
+
+Step 1: IF REAR = MAX-1 AND FORNT = 0
+		PRINT "OVERFLOW"
+		Go to Step 5
+	[END OF IF] 
+Step 2: IF REAR=MAX-1 AND FORNT > 0
+		SET REAR = 0 ;
+	ESLE
+ 		SET REAR = REAR + 1;
+	[END OF IF]
+Step 3: IF REAR = -1 AND FORNT = -1 
+		SET REAR = FORNT = 0 
+	[END OF IF]
+Step 4: SET QUENE[REAR]= NUM
+Step 5: EXIT
+
+		Deleting an element in circular quene
+
+Step 1: IF FORNT = -1
+	PRINT 	"OVERFLOW"
+	Go to Step
+Step 2: SET VAL = QUENE[FRONT] 
+Step 3: IF REAR = FORNT 
+		SET REAR = FRONT = -1
+	ELSE IF FRONT = MAX - 1 
+		SET FRONT =0
+	ELSE 
+		SET FRONT = FRONT + 1
+        [END OF IF]
+Step 4: EXIT 
